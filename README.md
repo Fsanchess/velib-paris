@@ -13,10 +13,10 @@ Kafka :https://kafka.apache.org/quickstart
 
 Apache Spark: https://spark.apache.org/downloads.html
 
-    Apache Kafka ==
-    Apache Spark == 
-    Python == 3.10
-    Java == 11
+    Apache Kafka
+    Apache Spark
+    Python
+    Java
 
 ## Python Libraries
 Ce projet est entièrement érit en python. Pour utiliser l'ensemble du code nous avond besoin des bibliothéque suivante :
@@ -73,3 +73,17 @@ Cette commande téléchargera la dépandance requise spark-sql-kafka-0-10_2.11:2
     The second script will load a list of topic and monitor the streams from Q1. If a match is found, it will send data to either topic Q2 (keyword match) or Q3 (topic name match).
     The third script consumes records from the last offset, and save them in Parquet format.
     Data Analysis (WIP)
+    
+    
+ ## Utiliser les données dans Databricks
+ 
+ 1 - Vous devez avoir recuperer le fichier CSV du consumer vu precedement 
+ 
+ 2 - Dans Databricks il vous faut créer un cluster 
+ 
+ 3 - Une fois ce cluster activé vous devez créer une table et y integrer le fichier CSV, vous devrez aussi choisir la ligne 1 comme HEADER 
+ 
+ 4 - Une fois cela fais vous pouvez ouvrir un notebook et utiliser le fichier notebook disponiible dans le dossier 
+ 
+ 5 - vous pouvez maintenant le lancer et l'exporter en dashboard ( qui est limité avec la version gratuite ) mais permet d'afficher les données à presenter.
+ 
