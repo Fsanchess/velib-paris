@@ -68,8 +68,8 @@ Pour lancer le projet, voici les commandes a utiliser dans des terminaux différ
 
 Cette commande téléchargera la dépandance requise spark-sql-kafka-0-10_2.11:2.4.0 pour Spark. En fonction de votre version il est nécessaire d'ajuster cette commande
 
-    <code> Le premier script 
-    The first script will process the whole corpus and send each word to a Kafka topic Q1.
-    The second script will load a list of topic and monitor the streams from Q1. If a match is found, it will send data to either topic Q2 (keyword match) or Q3 (topic name match).
-    The third script consumes records from the last offset, and save them in Parquet format.
-    Data Analysis (WIP)
+## Déatail des script
+Le premier script permet de récupérer les données et de les envoyer via le producer kafka
+Le second consumer récupère lles données et les agrége dans un fichier cvs
+Le troisième permet de calculer en direct la dispibilitée de certain catégorie<\code>
+  
