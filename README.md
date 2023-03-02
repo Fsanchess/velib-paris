@@ -13,21 +13,21 @@ Kafka :https://kafka.apache.org/quickstart
 
 Apache Spark: https://spark.apache.org/downloads.html
 
-    Apache Kafka ==
-    Apache Spark == 
+    Apache Kafka == 3.4.0
+    Apache Spark == 3.2.3
     Python == 3.10
-    Java == 11
+    Java == 11.0.18
 
 ## Python Libraries
 Ce projet est entièrement érit en python. Pour utiliser l'ensemble du code nous avond besoin des bibliothéque suivante :
 
-    Kafka-Python (Project Page) Python wrapper développé pour communicque avec Apache Kafka.
+    Kafka-Python Python wrapper développé pour communicque avec Apache Kafka.
 
     pip install kafka-python
 
-    pyArrow (Project Page) Used to save streams as Parquet files.
+    requests Utiliser pour requeter l'API REST.
 
-    pip install pyarrow
+    pip install requests
 
 Usage
 Environment Setup
@@ -68,7 +68,7 @@ Pour lancer le projet, voici les commandes a utiliser dans des terminaux différ
 
 Cette commande téléchargera la dépandance requise spark-sql-kafka-0-10_2.11:2.4.0 pour Spark. En fonction de votre version il est nécessaire d'ajuster cette commande
 
-
+    <code> Le premier script 
     The first script will process the whole corpus and send each word to a Kafka topic Q1.
     The second script will load a list of topic and monitor the streams from Q1. If a match is found, it will send data to either topic Q2 (keyword match) or Q3 (topic name match).
     The third script consumes records from the last offset, and save them in Parquet format.
