@@ -13,10 +13,10 @@ Kafka :https://kafka.apache.org/quickstart
 
 Apache Spark: https://spark.apache.org/downloads.html
 
-    Apache Kafka
-    Apache Spark
-    Python
-    Java
+    Apache Kafka ==
+    Apache Spark == 
+    Python == 3.10
+    Java == 11
 
 ## Python Libraries
 Ce projet est entièrement érit en python. Pour utiliser l'ensemble du code nous avond besoin des bibliothéque suivante :
